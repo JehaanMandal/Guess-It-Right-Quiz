@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess It Right Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Guess It Right Quiz</h1>
+        <div class="box">
+            <form id="form">
+                <h2 id="questions" class="hidden"> 
+                </h2>
+                <ul id="option" class="hidden">
+                </ul>
+                <div id="questions" class="hidden"></div>
+                <ul id="option" class="hidden"></ul>
+                <button id="start-btn">Start Quiz</button>
+                <button id="prev-btn" class="hidden">Previous</button>
+                <button id="next-btn" class="hidden">Next</button>
+                <div id="answers-container" class="hidden"></div>
+                <div id="steps" class="hidden">
+                <span id="total"></span>Out of 15</div>
+                <div id="answerContainer"></div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
