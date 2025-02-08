@@ -9,7 +9,7 @@ Created a Quiz Game where you can play the quiz by clicking on the "Start Quiz" 
 ![Screenshot 2025-02-08 102629](https://github.com/user-attachments/assets/217d2c16-1615-4f4f-9a10-08098411a1dc)
 
 
-🛠 Skills
+🛠 Code:
 Javascript, HTML, CSS...
 
 FeedBack
