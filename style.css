@@ -1,0 +1,130 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0,36,31);
+    background: linear-gradient(90deg, rgba(0,36,31,1) 0%, rgba(9,121,117,1) 51%, rgba(0,219,255,1) 100%);
+    color: white;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    padding: 4rem;
+   
+}
+.box{
+    display: flex;
+    border: 2px solid rgb(16, 64, 78);
+    height: auto;
+    width: 30rem;
+    padding: 25px;
+    justify-content: center;
+    background-color: rgb(87, 43, 113);
+    border-radius: 10px;
+    background-color: rgb(14, 73, 73);
+
+}
+h1{
+    margin-left: 6rem;
+    margin-bottom: 20px;
+    
+}
+
+#steps{
+    width: 9rem;
+    margin-top: -2rem;
+    margin-left: 2rem;
+}
+
+#total{
+    margin-right: 7px;
+    background-color: #0e86a4;
+    padding: 5px;
+    border-radius: 3px;
+}
+#questions{
+    margin-bottom: 10px;
+    justify-self: center;
+    color: rgb(88, 179, 136);
+    font-size: 20px;
+}
+li {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fffcd4;
+    font-weight: 700;
+    padding: 10px;
+    width: 90%;
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    background-color: #807bbd;
+    border-radius: 8px;
+}
+#option{
+    list-style: none;
+}
+
+button{
+    display: flexbox;
+    color: #fff;
+    padding: 6px;
+    font-family: monospace;
+    border-radius: 4px;
+    margin-right: 1rem;
+    margin-top: 10px;
+    width: 7rem;
+}
+
+#prev-btn{
+    background-color: rgb(9, 66, 18);
+    font-size: 1rem;
+    margin-left: 20rem;  
+    /* display: flex; */
+    justify-content: center;
+    justify-self: end;
+}
+#prev-btn:hover{
+    background-color: rgb(71, 16, 26);
+}
+
+#next-btn{
+    background-color: rgb(64, 54, 8);
+    font-size: 1rem;
+    margin-left: 20rem;
+    justify-content: center;
+}
+
+#next-btn:hover{
+    background-color: rgb(32, 10, 65) ;
+}
+
+ #start-btn {
+    background-color: rgb(87, 43, 113);
+    font-size: 1rem; 
+    text-align: center;
+    margin-left: 4rem;
+}
+
+#start-btn:hover{
+    background-color: rgb(142, 19, 8);
+  
+}
+.hidden{
+    display: none;
+}
+
+#answers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    list-style: none;
+}
