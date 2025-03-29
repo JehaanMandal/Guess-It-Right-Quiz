@@ -63,6 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             answer: "To execute the script asynchronously as soon as it's available",
         },
+         {
+            question: "What is the purpose of the 'fetch()' API in JavaScript?",
+                 options: [
+                  "To manipulate the DOM",
+                  "To make HTTP requests",
+                  "To create animations",
+                  "To store data in the browser",
+                ],
+                answer: "To make HTTP requests",
+              },
         {
             question: "What is the purpose of the 'Viewport' meta tag?",
             options: [
