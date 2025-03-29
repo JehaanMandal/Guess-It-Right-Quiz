@@ -22,16 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
             options: ["margin", "padding", "border-spacing", "space"],
             answer: "margin",
         },
-        {
-            question: "What is the difference between 'display: none;' and 'visibility: hidden;' in CSS?",
-            options: [
-                "No difference",
-                "display: none; removes the element from the document flow, visibility: hidden; keeps the space",
-                "visibility: hidden; removes the element from the document flow, display: none; keeps the space",
-                "display: none; is for text, visibility: hidden; is for images",
-            ],
-            answer: "display: none; removes the element from the document flow, visibility: hidden; keeps the space",
-        },
+      
         {
             question: "What is the purpose of the 'defer' attribute in a 'script' tag?",
             options: [
@@ -81,26 +72,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 "To load external CSS files",
             ],
             answer: "To control the page's layout on different devices",
-        },
-        {
-            question: "What is the purpose of 'CSS Grid'?",
-            options: [
-                "To create 3D layouts",
-                "To create two-dimensional layouts for web pages",
-                "To create animations",
-                "To style form elements",
-            ],
-            answer: "To create two-dimensional layouts for web pages",
-        },
-        {
-            question: "What is the difference between 'inline', 'block', and 'inline-block' elements in CSS?",
-            options: [
-                "No difference",
-                "inline: no line break, block: line break, inline-block: combination",
-                "block: no line break, inline: line break, inline-block: combination",
-                "inline: for text, block: for images, inline-block: for forms",
-            ],
-            answer: "inline: no line break, block: line break, inline-block: combination",
         },
     ];
 
