@@ -4,114 +4,132 @@ document.addEventListener("DOMContentLoaded", () => {
     const prevBtn = document.getElementById("prev-btn");
     const nextBtn = document.getElementById("next-btn");
     const startBtn = document.getElementById("start-btn");
-    const steps = document.getElementById("steps");
-    const total = document.getElementById("total"); 
-    const answerContainer = document.getElementById("answers-container")
+    const answerContainer = document.getElementById("answers-container");
 
     const questions = [
         {
-            question: `Who is considered the "Father of the Nation" in India?`,
-            options: ["Jawaharlal Nehru", "Mahatma Gandhi", "B.R. Ambedkar", "Sardar Vallabhbhai Patel"],
-            answer: "Mahatma Gandhi",
+            question: "What is the purpose of the 'alt' attribute in an 'img' tag?",
+            options: [
+                "To define the image's alignment",
+                "To provide alternative text for screen readers",
+                "To specify the image's source",
+                "To add a caption to the image",
+            ],
+            answer: "To provide alternative text for screen readers",
         },
         {
-            question: `What is the capital city of India?`,
-            options: ["Mumbai", "Chennai", "Delhi", "Kolkata"],
-            answer: "Delhi",
+            question: "Which CSS property is used to control the spacing between elements?",
+            options: ["margin", "padding", "border-spacing", "space"],
+            answer: "margin",
         },
         {
-            question: `Who is known as the "Iron Man of India"?`,
-            options: ["Sardar Vallabhbhai Patel", "Mahatma Gandhi", "Jawaharlal Nehru", "B.R. Ambedkar"],
-            answer: "Sardar Vallabhbhai Patel",
-         },
-            {
-                question: `Who wrote the national anthem of India?`,
-                options: ["Rabindranath Tagore", "Bankim Chandra Chatterjee", "Sarojini Naidu", "Subramania Bharati"],
-                answer: "Rabindranath Tagore",
-            },
-            {
-                question: `Which is the largest state in India by area?`,
-                options: ["Madhya Pradesh", "Maharashtra", "Rajasthan", "Uttar Pradesh"],
-                answer: "Rajasthan",
-            },
-            {
-                question: `What is the national animal of India?`,
-                options: ["Lion", "Elephant", "Bengal Tiger", "Leopard"],
-                answer: "Bengal Tiger",
-            },
-            {
-                question: `Which river is considered the holiest river in India?`,
-                options: ["Yamuna", "Godavari", "Ganga", "Brahmaputra"],
-                answer: "Ganga",
-            },
-            {
-                question: `Who was the first President of independent India?`,
-                options: ["Dr. Rajendra Prasad", "Sardar Patel", "Dr. B.R. Ambedkar", "Jawaharlal Nehru"],
-                answer: "Dr. Rajendra Prasad",
-            },
-            {
-                question: `Which festival is known as the "Festival of Lights"?`,
-                options: ["Holi", "Eid", "Diwali", "Christmas"],
-                answer: "Diwali",
-            },
-            {
-                question: `Which monument is known as the "Symbol of Love" in India?`,
-                options: ["Qutub Minar", "Taj Mahal", "India Gate", "Charminar"],
-                answer: "Taj Mahal",
-            },
-            {
-                question: `Who was the first Prime Minister of India?`,
-                options: ["Indira Gandhi", "Mahatma Gandhi", "Jawaharlal Nehru", "Sardar Patel"],
-                answer: "Jawaharlal Nehru",
-            },
-            {
-                question: `Which state is known as the "Spice Garden of India"?`,
-                options: ["Kerala", "Tamil Nadu", "Karnataka", "Andhra Pradesh"],
-                answer: "Kerala",
-            },
-            {
-                question: `Which Indian freedom fighter is known as "Netaji"?`,
-                options: ["Bhagat Singh", "Subhas Chandra Bose", "Chandra Shekhar Azad", "Lala Lajpat Rai"],
-                answer: "Subhas Chandra Bose",
-            },
-            {
-                question: `Which is the national bird of India?`,
-                options: ["Sparrow", "Peacock", "Kingfisher", "Parrot"],
-                answer: "Peacock",
-            },
-            {
-                question: `What is the currency of India?`,
-                options: ["Rupee", "Dollar", "Yen", "Euro"],
-                answer: "Rupee",
-            },
-    
-        
+            question: "What is the difference between 'display: none;' and 'visibility: hidden;' in CSS?",
+            options: [
+                "No difference",
+                "display: none; removes the element from the document flow, visibility: hidden; keeps the space",
+                "visibility: hidden; removes the element from the document flow, display: none; keeps the space",
+                "display: none; is for text, visibility: hidden; is for images",
+            ],
+            answer: "display: none; removes the element from the document flow, visibility: hidden; keeps the space",
+        },
+        {
+            question: "What is the purpose of the 'defer' attribute in a 'script' tag?",
+            options: [
+                "To execute the script immediately",
+                "To execute the script after the HTML is parsed, in the order they appear",
+                "To execute the script after the entire page is loaded",
+                "To prevent the script from executing",
+            ],
+            answer: "To execute the script after the HTML is parsed, in the order they appear",
+        },
+        {
+            question: "What is the purpose of the 'z-index' property in CSS?",
+            options: [
+                "To control the transparency of an element",
+                "To control the stacking order of positioned elements",
+                "To control the zoom level of an element",
+                "To control the element's position on the z-axis",
+            ],
+            answer: "To control the stacking order of positioned elements",
+        },
+        {
+            question: "What is the purpose of the 'localStorage' API in JavaScript?",
+            options: [
+                "To store data on the server",
+                "To store data in the browser that persists across sessions",
+                "To store temporary data in the browser",
+                "To store data in a database",
+            ],
+            answer: "To store data in the browser that persists across sessions",
+        },
+        {
+            question: "What is the purpose of the 'async' attribute in a 'script' tag?",
+            options: [
+                "To execute the script immediately",
+                "To execute the script after the HTML is parsed, in the order they appear",
+                "To execute the script after the entire page is loaded",
+                "To execute the script asynchronously as soon as it's available",
+            ],
+            answer: "To execute the script asynchronously as soon as it's available",
+        },
+        {
+            question: "What is the purpose of the 'Viewport' meta tag?",
+            options: [
+                "To set the page's background color",
+                "To control the page's layout on different devices",
+                "To define the page's title",
+                "To load external CSS files",
+            ],
+            answer: "To control the page's layout on different devices",
+        },
+        {
+            question: "What is the purpose of 'CSS Grid'?",
+            options: [
+                "To create 3D layouts",
+                "To create two-dimensional layouts for web pages",
+                "To create animations",
+                "To style form elements",
+            ],
+            answer: "To create two-dimensional layouts for web pages",
+        },
+        {
+            question: "What is the difference between 'inline', 'block', and 'inline-block' elements in CSS?",
+            options: [
+                "No difference",
+                "inline: no line break, block: line break, inline-block: combination",
+                "block: no line break, inline: line break, inline-block: combination",
+                "inline: for text, block: for images, inline-block: for forms",
+            ],
+            answer: "inline: no line break, block: line break, inline-block: combination",
+        },
     ];
+
     let initialValue = 0;
     let score = 0;
-    let userAnswers = new Array(questions.length).fill(null); 
+    let userAnswers = new Array(questions.length).fill(null);
 
     prevBtn.classList.add("hidden");
     nextBtn.classList.add("hidden");
     answerContainer.classList.add("hidden");
+    questionPlace.classList.add("hidden");
+    optionPlace.classList.add("hidden");
 
-    startBtn.addEventListener("click", (e) => {
-        e.preventDefault();
+    startBtn.addEventListener("click", () => {
+        restartQuiz();
+    });
+
+    function restartQuiz() {
         initialValue = 0;
         score = 0;
-        userAnswers.fill(null); 
+        userAnswers.fill(null);
         startBtn.classList.add("hidden");
-        prevBtn.classList.add("hidden");
+        prevBtn.classList.remove("hidden");
         nextBtn.classList.remove("hidden");
         questionPlace.classList.remove("hidden");
         optionPlace.classList.remove("hidden");
         answerContainer.classList.add("hidden");
-        if (steps) steps.classList.remove("hidden");
-        if (total) total.classList.remove("hidden"); 
-        answerContainer.innerHTML = "";
-        optionPlace.innerHTML = "";
-        showQuestion()
-    });
+        showQuestion();
+    }
 
     function showQuestion() {
         questionPlace.textContent = questions[initialValue].question;
@@ -120,78 +138,73 @@ document.addEventListener("DOMContentLoaded", () => {
         questions[initialValue].options.forEach((option) => {
             const checked = userAnswers[initialValue] === option ? "checked" : "";
             optionPlace.innerHTML += `
-                <li>
+                <li data-option="${option}">
                     <input type="radio" name="quiz" value="${option}" ${checked}> ${option}
                 </li>
             `;
         });
 
-        if (total) total.textContent = initialValue + 1;
-        prevBtn.classList.toggle("hidden", initialValue === 0);
-        nextBtn.textContent = initialValue === questions.length - 1 ? "Finish" : "Next";
-    }
-
-    function calculateScore() {
-        score = 0;
-        questions.forEach((q, i) => {
-            if (userAnswers[i] === q.answer) {
-                score++;
-            }
+        const listItems = optionPlace.querySelectorAll("li");
+        listItems.forEach((listItem) => {
+            listItem.addEventListener("click", () => {
+                const radio = listItem.querySelector('input[type="radio"]');
+                if (radio) {
+                    radio.click();
+                }
+            });
         });
-        startBtn.classList.remove("hidden"); 
-        startBtn.textContent = "Restart Quiz";
+
+        const radioInputs = optionPlace.querySelectorAll('input[type="radio"]');
+        radioInputs.forEach((radio) => {
+            radio.addEventListener('change', (event) => {
+                userAnswers[initialValue] = event.target.value;
+            });
+        });
     }
 
-
-    nextBtn.addEventListener("click", function (e) {
-        e.preventDefault();
-        const selectedOption = document.querySelector('input[name="quiz"]:checked');
-        if (selectedOption) {
-            userAnswers[initialValue] = selectedOption.value;
-        }
-
+    nextBtn.addEventListener("click", () => {
         if (initialValue < questions.length - 1) {
             initialValue++;
             showQuestion();
         } else {
-            questionPlace.classList.add("hidden");
-            optionPlace.classList.add("hidden");
-            prevBtn.classList.add("hidden");
-            nextBtn.classList.add("hidden");
             showFinalResults();
         }
     });
 
-    prevBtn.addEventListener("click", function (e) {
-        e.preventDefault()
+    prevBtn.addEventListener("click", () => {
         if (initialValue > 0) {
             initialValue--;
             showQuestion();
         }
     });
-    
+
     function showFinalResults() {
-        calculateScore();
-
-        if (total) total.classList.add("hidden"); 
-        if (steps) steps.classList.add("hidden"); 
-        answerContainer.innerHTML = `<h2>Your Score: ${score}/${questions.length}</h2><ul>`;
-
-        questions.forEach((q, i) => {
-            let userAnswer = userAnswers[i] || "No Answer";
-            let correct = userAnswer === q.answer ? "✅" : "❌";
-            answerContainer.innerHTML += `
-                <li>${q.question} <br>
-                <strong>Your Answer:</strong> ${userAnswer} ${correct} <br>
-                <strong>Correct Answer:</strong> ${q.answer}
-                </li><hr>
-            `;
-        });
-
-        answerContainer.innerHTML += `</ul>`;
+        score = userAnswers.filter((answer, i) => answer === questions[i].answer).length;
+        questionPlace.classList.add("hidden");
+        optionPlace.classList.add("hidden");
+        prevBtn.classList.add("hidden");
+        nextBtn.classList.add("hidden");
         answerContainer.classList.remove("hidden");
-        prevBtn.classList.add("hidden")
+
+        let resultsHTML = `<h2>Your Score: ${score}/${questions.length}</h2>`;
+
+        for (let i = 0; i < questions.length; i++) {
+            const userAnswer = userAnswers[i];
+            const correctAnswer = questions[i].answer;
+            const isCorrect = userAnswer === correctAnswer;
+
+            resultsHTML += `
+                <p>
+                    <strong>Question ${i + 1}:</strong> ${questions[i].question}<br>
+                    Your Answer: ${userAnswer || "Not Answered"}<br>
+                    Correct Answer: ${correctAnswer}<br>
+                    Result: ${isCorrect ? "Correct" : "Wrong"}
+                </p>
+            `;
+        }
+
+        answerContainer.innerHTML = resultsHTML;
+        startBtn.classList.remove("hidden");
+        startBtn.textContent = "Restart Quiz";
     }
 });
-
-  
