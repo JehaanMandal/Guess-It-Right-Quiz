@@ -12,22 +12,20 @@
     <div class="container">
         <h1>Guess It Right Quiz</h1>
         <div class="box">
-            <form id="form">
-                <h2 id="questions" class="hidden"> 
-                </h2>
-                <ul id="option" class="hidden">
-                </ul>
-                <div id="questions" class="hidden"></div>
+            <form id="quiz-form">
+                <h2 id="questions" class="hidden"></h2>
                 <ul id="option" class="hidden"></ul>
-                <button id="start-btn">Start Quiz</button>
-                <button id="prev-btn" class="hidden">Previous</button>
-                <button id="next-btn" class="hidden">Next</button>
+                <button type="button" id="start-btn">Start Quiz</button>
+                <button type="button" id="prev-btn" class="hidden">Previous</button>
+                <button type="button" id="next-btn" class="hidden">Next</button>
                 <div id="answers-container" class="hidden"></div>
                 <div id="steps" class="hidden">
-                <span id="total"></span>Out of 15</div>
-                <div id="answerContainer"></div>
+                    <span id="total"></span>Out of 15
+                </div>
+            </form>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
-<script src="./script.js"></script>
+
 </html>
